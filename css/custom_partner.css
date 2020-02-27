@@ -1,0 +1,32 @@
+ul.c_contacts li a {
+    color: #555555 !important;
+}
+ul.c_contacts li a:hover {
+    color: #004dda !important;
+    opacity: 1;
+}
+
+ul.contacts li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ul.contacts li:last-child {
+    margin-bottom: 0;
+}
+
+ul.contacts li i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #004dda;
+    line-height: 1;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.bg_cover{
+    background-size: cover !important;
+    center;
+}

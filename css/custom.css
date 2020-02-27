@@ -4,3 +4,18 @@
 .dpartner {
     height: 65% !important;
 }
+.dpartner_min {
+    height: 40% !important;
+}
+
+.logo_bar_wt{
+    color: white !important;
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+}
+
+.logo_bar{
+    /*text-transform: uppercase; */
+    font-weight: 600;
+}
+
