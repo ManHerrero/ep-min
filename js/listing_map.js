@@ -486,7 +486,7 @@
 				'<div class="marker_info" id="marker_info">' +
 				'<img src="' + item.map_image_url + '" alt=""/>' +
 				'<span>'+ 
-					'<span class="infobox_rate">'+ item.rate +'</span>' +
+					'<span class="infobox_rate d-none">'+ item.rate +'</span>' +
 					'<em>'+ item.type_point +'</em>' +
 					'<h3>'+ item.name_point +'</h3>' +
 				'<strong>'+ item.description_point +'</strong>' +

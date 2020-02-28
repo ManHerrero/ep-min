@@ -28,3 +28,16 @@ ul.share-buttons li a.ig-share {
     color: #fff;
     border-color: #c13584;
   }
+
+/* No bullets*/
+  ul.no_bullets li:before {
+    font-family: 'ElegantIcons';
+    content: "\e051";
+    color: red;
+  }
+
+  ul.accommodation_conditions li {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+  }  
