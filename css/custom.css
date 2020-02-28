@@ -19,3 +19,12 @@
     font-weight: 600;
 }
 
+/* Instagram share */
+ul.share-buttons li a.ig-share {
+    color: #c13584;
+  }
+  ul.share-buttons li a.ig-share:hover {
+    background: #c13584;
+    color: #fff;
+    border-color: #c13584;
+  }
