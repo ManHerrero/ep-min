@@ -1,0 +1,265 @@
+#%RAML 1.0
+title: Erasmus Play  - data structures
+types: 
+    # Simple types
+    Author:
+        type: object
+        properties:
+            name: string
+            icon: Photo
+    Photo:
+        type: file
+        fileTypes: ['image/jpeg', 'image/png']
+    Pictures:
+        type: object
+        properties:
+            cover: 
+                required: true
+                type: Photo
+            gallery:
+                required: false
+                type: Photo[]
+    Price:
+        type: object
+        properties:
+            figure: 
+                required: true
+                type: number
+            currency:
+                required: true
+                type: string
+            frequency:
+                required: true
+                type: string
+    Rule:
+        type: object
+        properties:
+            allowed:
+                required: true
+                type: boolean
+            rule:
+                required: true
+                type: string
+    Amenitie:
+        type: object
+        properties:
+            icon: 
+                required: false
+                type: icon
+            text: 
+                required: true
+                type: string  
+          
+    # Complex types
+    # Contact
+    Contact:
+        type: object
+        properties:
+            web:
+                required: true
+                type: string
+            phone:
+                required: true
+                type: string
+            email:
+                required: true
+                type: string
+
+    # Campus
+    Campus:
+        type: object
+        properties:
+            id: 
+                required: true
+                type: string
+            title: 
+                required: true
+                type: string
+            photo:
+                required: true
+                type: Photo
+            description:
+                required: true
+                type: string    
+            address:
+                required: true
+                type: string
+            contact:
+                required: false
+                type: Contact
+    # University
+    University:
+        type: object
+        properties:
+            id: 
+                required: true
+                type: string
+            ranking:
+                required: true
+                type: number
+            visits:
+                required: true
+                type: number    
+            title: 
+                required: true
+                type: string
+            logo:
+                required: true
+                type: Photo
+            gallery:
+                required: true
+                type: Pictures
+            short_description:
+                required: true
+                type: string    
+            long_description:
+                required: true
+                type: string
+            address:
+                required: true
+                type: string
+            city: 
+                required: true
+                type: string
+            country:
+                required: true
+                type: string
+            contact:
+                required: true
+                type: Contact
+            campus:
+                required: false
+                type: Campus[]
+    # Partner
+    Partner:
+        type: object
+        properties:
+            id: 
+                required: true
+                type: string
+            ranking:
+                required: true
+                type: number
+            visits:
+                required: true
+                type: number    
+            title: 
+                required: true
+                type: string
+            logo:
+                required: true
+                type: Photo
+            gallery:
+                required: true
+                type: Pictures
+            short_description:
+                required: true
+                type: string    
+            long_description:
+                required: true
+                type: string
+            address:
+                required: false
+                type: string
+            contact:
+                required: false
+                type: Contact
+            city: 
+                required: true
+                type: string
+            country:
+                required: true
+                type: string
+            type:
+                required: true
+                type: string
+
+    # Post
+    Post:
+        type: object
+        properties: 
+            id:
+                required: true
+                type: string
+            visits:
+                required: true
+                type: number
+            title: 
+                required: true
+                type: string
+            photo:
+                required: true
+                type: Photo
+            short_text:
+                required: true
+                type: string       
+            text:
+                required: true
+                type: string
+            tags:
+                required: false
+                type: string[]
+            author:
+                required: true
+                type: Author
+            category:
+                required: true
+                type: string
+            date:
+                required: true
+                type: date
+            published:
+                required: true
+                type: boolean
+
+    # Accommodation
+    Accommodation:
+        type: object
+        properties:
+            id: 
+                required: true
+                type: string
+            ranking:
+                required: true
+                type: number
+            visits:
+                required: true
+                type: number    
+            title: 
+                required: true
+                type: string
+            logo:
+                required: true
+                type: Photo
+            gallery:
+                required: true
+                type: Pictures
+            short_description:
+                required: true
+                type: string    
+            long_description:
+                required: true
+                type: string
+            address:
+                required: true
+                type: string
+            url: 
+                required: true
+                type: string
+            price:
+                required: true
+                type: Price
+            rules:
+                required: false
+                type: Rule[]
+            amenities:
+                required: false
+                type: Amenitie[]
+            conditions:
+                required: false
+                type: string[]
+            availability:
+                required: true
+                type: date
+
+            
