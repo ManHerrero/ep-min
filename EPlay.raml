@@ -2,6 +2,18 @@
 title: Erasmus Play  - data structures
 types: 
     # Simple types
+    Date:
+        type: object
+        properties:
+            day: 
+                required: true
+                type: number
+            month: 
+                required: true
+                type: number
+            year: 
+                required: true
+                type: number
     Author:
         type: object
         properties:
@@ -45,7 +57,7 @@ types:
         properties:
             icon: 
                 required: false
-                type: icon
+                type: string
             text: 
                 required: true
                 type: string  
@@ -207,7 +219,7 @@ types:
                 type: string
             date:
                 required: true
-                type: date
+                type: Date
             published:
                 required: true
                 type: boolean
@@ -260,6 +272,6 @@ types:
                 type: string[]
             availability:
                 required: true
-                type: date
+                type: Date
 
             
