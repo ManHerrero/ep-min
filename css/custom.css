@@ -19,6 +19,10 @@
     font-weight: 600;
 }
 
+.blacked{
+  color: black;
+}
+
 /* Instagram share */
 ul.share-buttons li a.ig-share {
     color: #c13584;
